@@ -203,7 +203,7 @@
 			attributes = {
 				CLASSPREFIX = SS;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "DeepTech, Inc.";
+				ORGANIZATIONNAME = "Sam and Sidney";
 			};
 			buildConfigurationList = 13CA989315781CF100F90408 /* Build configuration list for PBXProject "Chitter" */;
 			compatibilityVersion = "Xcode 3.2";
