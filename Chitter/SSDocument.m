@@ -3,10 +3,11 @@
 //  Chitter
 //
 //  Created by Sidney San Martín on 5/31/12.
-//  Copyright (c) 2012 Sam and Sidney All rights reserved.
+//  Copyright (c) 2012 DeepTech, Inc. All rights reserved.
 //
 
 #import "SSDocument.h"
+#import "SSChitterStatusMenuController.h"
 
 @implementation SSDocument
 

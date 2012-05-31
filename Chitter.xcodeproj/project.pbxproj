@@ -18,6 +18,10 @@
 		13CA98C015781CF200F90408 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA989D15781CF100F90408 /* Cocoa.framework */; };
 		13CA98C815781CF200F90408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13CA98C615781CF200F90408 /* InfoPlist.strings */; };
 		13CA98CB15781CF200F90408 /* ChitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CA98CA15781CF200F90408 /* ChitterTests.m */; };
+		13CA98E215781F7900F90408 /* SSChitterStatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CA98E115781F7900F90408 /* SSChitterStatusMenuController.m */; };
+		13CA98E6157823F500F90408 /* SSChitterApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CA98E5157823F500F90408 /* SSChitterApplicationDelegate.m */; };
+		13CA98EE1578299B00F90408 /* ChitterStatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CA98ED1578299B00F90408 /* ChitterStatusMenu.xib */; };
+		13CA98F015782D3800F90408 /* statusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CA98EF15782D3800F90408 /* statusIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		13CA98C715781CF200F90408 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13CA98C915781CF200F90408 /* ChitterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChitterTests.h; sourceTree = "<group>"; };
 		13CA98CA15781CF200F90408 /* ChitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChitterTests.m; sourceTree = "<group>"; };
+		13CA98E015781F7900F90408 /* SSChitterStatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSChitterStatusMenuController.h; sourceTree = "<group>"; };
+		13CA98E115781F7900F90408 /* SSChitterStatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSChitterStatusMenuController.m; sourceTree = "<group>"; };
+		13CA98E4157823F500F90408 /* SSChitterApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSChitterApplicationDelegate.h; sourceTree = "<group>"; };
+		13CA98E5157823F500F90408 /* SSChitterApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSChitterApplicationDelegate.m; sourceTree = "<group>"; };
+		13CA98ED1578299B00F90408 /* ChitterStatusMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChitterStatusMenu.xib; sourceTree = "<group>"; };
+		13CA98EF15782D3800F90408 /* statusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +126,13 @@
 		13CA98A315781CF100F90408 /* Chitter */ = {
 			isa = PBXGroup;
 			children = (
+				13CA98E015781F7900F90408 /* SSChitterStatusMenuController.h */,
+				13CA98E115781F7900F90408 /* SSChitterStatusMenuController.m */,
 				13CA98AF15781CF100F90408 /* SSDocument.h */,
 				13CA98B015781CF100F90408 /* SSDocument.m */,
+				13CA98E4157823F500F90408 /* SSChitterApplicationDelegate.h */,
+				13CA98E5157823F500F90408 /* SSChitterApplicationDelegate.m */,
+				13CA98ED1578299B00F90408 /* ChitterStatusMenu.xib */,
 				13CA98B215781CF100F90408 /* SSDocument.xib */,
 				13CA98B515781CF200F90408 /* MainMenu.xib */,
 				13CA98A415781CF100F90408 /* Supporting Files */,
@@ -128,6 +143,7 @@
 		13CA98A415781CF100F90408 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13CA98EF15782D3800F90408 /* statusIcon.png */,
 				13CA98A515781CF100F90408 /* Chitter-Info.plist */,
 				13CA98A615781CF100F90408 /* InfoPlist.strings */,
 				13CA98A915781CF100F90408 /* main.m */,
@@ -232,6 +248,8 @@
 				13CA98AE15781CF100F90408 /* Credits.rtf in Resources */,
 				13CA98B415781CF100F90408 /* SSDocument.xib in Resources */,
 				13CA98B715781CF200F90408 /* MainMenu.xib in Resources */,
+				13CA98EE1578299B00F90408 /* ChitterStatusMenu.xib in Resources */,
+				13CA98F015782D3800F90408 /* statusIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +286,8 @@
 			files = (
 				13CA98AA15781CF100F90408 /* main.m in Sources */,
 				13CA98B115781CF100F90408 /* SSDocument.m in Sources */,
+				13CA98E215781F7900F90408 /* SSChitterStatusMenuController.m in Sources */,
+				13CA98E6157823F500F90408 /* SSChitterApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +469,7 @@
 				13CA98D015781CF200F90408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13CA98D115781CF200F90408 /* Build configuration list for PBXNativeTarget "ChitterTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +478,7 @@
 				13CA98D315781CF200F90408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
