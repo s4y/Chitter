@@ -15,7 +15,7 @@
 - (SSChitterStatusMenuController*)init
 {
 	self = [super init];
-	self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+	self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:24];
 	[NSBundle loadNibNamed:@"ChitterStatusMenu" owner:self];
 	return self;
 }
